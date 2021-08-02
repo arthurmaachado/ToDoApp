@@ -1,0 +1,17 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% load static %}
+<link href="{% static 'base/style.css' %}" rel="stylesheet">
+<div class="headerbar">
+  <p>Já possui uma conta? <a href="/login/">Login</a></p>
+</div>
+<h1>Registro</h1>
+<form method="POST">
+  <div class="card-body">
+  {%csrf_token%}
+  {{form.as_p}}
+  <input class="button" type="submit" value="Registre-se">
+
+</form>
+</div>
+{% endblock content %}

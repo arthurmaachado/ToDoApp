@@ -1,0 +1,26 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% load static %}
+<link href="{% static 'base/style.css' %}" rel="stylesheet">
+
+<div class="headerbar">
+  <h1>Login</h1>
+</div>
+
+<div class="card-body">
+  <form method="POST">
+    {%csrf_token%}
+    <label for="username">Usuario: </label>
+    <input id="username" type="text" name="username">
+    <label for="password">Senha:</label>
+    <input id="password" type="password" name="password">
+    <input class="button" type="submit" value="Login" style="margin-top: 10px;">
+  
+    <p>Ainda não possui uma conta? <a href="/register/">Registre-se</a></p>
+    <p>Esqueceu sua senha? <a href="/reset/">Trocar de Senha</a> </p>
+  
+  </form>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,126 @@
+body {
+    background-color: #FAFAFA;
+    font-family: 'Yomogi', cursive;
+    padding-top: 50px;
+
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    background-color:aliceblue;
+    font-family: 'Yomogi', cursive;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+    box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21) ;
+
+
+}
+
+
+
+a {
+    color: blue;
+
+}
+
+.headerbar {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.headerbar a {
+    color:#fff;
+    text-decoration: none;
+    
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid rgb(226,226,226);
+
+}
+
+.tarefa-titulo {
+    display: flex;
+}
+
+.tarefa-titulo a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.tarefa-completa-icone {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(105,192,105);
+    border-radius: 50%;
+}
+
+.tarefa-incompleta-icone {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 50%;
+
+}
+
+.delete-link {
+    color: red;
+}
+
+.button {
+    border: 1px solid #7f53ac;
+    background-color: #FAFAFA;
+    color: #7f53ac;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+label {
+    padding-top: 10px !important;
+    display: block;
+}
+
+
+.search-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.add-link {
+    color: #647dee;
+    text-decoration: none;
+    font-size: 22px;
+    text-shadow: 1px 1px #7f53ac;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    border:1px solid #7f53ac;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
